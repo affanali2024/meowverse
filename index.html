@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affan's Meow Banana Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #f6e58d, #ffbe76);
+      color: #2f3542;
+      text-align: center;
+    }
+    header {
+      background-color: #ffdd59;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .quote {
+      font-style: italic;
+      margin-top: 10px;
+    }
+    .content {
+      padding: 30px;
+    }
+    .project {
+      background: #f9ca24;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      width: 80%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    .banana-cat {
+      margin-top: 30px;
+      width: 250px;
+    }
+    footer {
+      background-color: #f6e58d;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Affan's Meow Banana Portfolio 🍌🐱</h1>
+    <div class="quote">"Stay curious and keep peeling layers of knowledge."</div>
+  </header>
+
+  <div class="content">
+    <h2>About Me</h2>
+    <p>Hi! I'm Affan – a banana-fueled, cat-loving coder who builds fun and functional websites!</p>
+    <img src="https://i.imgur.com/X7TtVnL.png" alt="Banana Cat" class="banana-cat" />
+
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Project Meowgic</h3>
+      <img src="https://i.imgur.com/3zQZ6A8.png" alt="Project 1" />
+      <p>A magical to-do list app with cat gifs and banana rewards 🍌✨</p>
+    </div>
+
+    <div class="project">
+      <h3>Banana Blog</h3>
+      <img src="https://i.imgur.com/PGKxCF5.png" alt="Project 2" />
+      <p>A fun blog themed around tropical fruits and feline adventures 🐾</p>
+    </div>
+
+    <div class="project">
+      <h3>Meowverse Explorer</h3>
+      <img src="https://i.imgur.com/bffpUHr.png" alt="Project 3" />
+      <p>Navigate through a universe of AI cats 🪐🐱 with 3D animations!</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Affan | Theme: Meow Banana 🍌🐱
+  </footer>
+
+  <script>
+    const quotes = [
+      "Code like a cat chasing a laser pointer!",
+      "Bananas are yellow, errors are red – fix them before you go to bed.",
+      "Keep calm and purr on.",
+      "Every bug is just a hidden banana.",
+    ];
+
+    const quoteDiv = document.querySelector(".quote");
+    setInterval(() => {
+      const random = Math.floor(Math.random() * quotes.length);
+      quoteDiv.textContent = quotes[random];
+    }, 5000);
+  </script>
+</body>
+</html>
